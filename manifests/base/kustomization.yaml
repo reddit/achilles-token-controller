@@ -1,0 +1,14 @@
+# handwritten
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../crd/bases/
+  - rbac/
+  - deployment/achilles-token-controller-manager.yaml
+
+images:
+  # TODO: replace me
+  - name: controller
+    newName: controller
+    newTag: latest

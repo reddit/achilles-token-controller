@@ -1,0 +1,47 @@
+# Handwritten
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: achilles-token-controller-manager
+  namespace: achilles-system
+spec:
+  selector:
+    matchLabels:
+      app: achilles-token-controller-manager
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: achilles-token-controller-manager
+    spec:
+      securityContext:
+        runAsNonRoot: true
+      containers:
+        - image: REPLACE-ME
+          imagePullPolicy: IfNotPresent
+          name: manager
+          args:
+            - "--incluster"
+          securityContext:
+            allowPrivilegeEscalation: false
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8081
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8081
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          ports:
+            - containerPort: 9443
+              name: webhook-server
+              protocol: TCP
+            - containerPort: 8080
+              name: metrics
+              protocol: TCP
+      serviceAccountName: achilles-token-controller-manager
+      terminationGracePeriodSeconds: 10
