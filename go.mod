@@ -1,4 +1,4 @@
-module github.snooguts.net/reddit/achilles-token-controller
+module github.com/reddit/achilles-token-controller
 
 go 1.22.5
 
