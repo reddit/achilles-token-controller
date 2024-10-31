@@ -7,8 +7,8 @@ ARG TARGETARCH
 # TODO remove this line once the repo is public
 ENV GOPROXY "https://goproxy.build.ue1.snooguts.net"
 ENV GOPRIVATE ""
-ENV GONOSUMDB "github.snooguts.net/*"
-RUN git config --global url.git@github.snooguts.net:.insteadof https://github.snooguts.net/
+ENV GONOSUMDB "github.com/*"
+RUN git config --global url.git@github.com:.insteadof https://github.com/
 
 WORKDIR /workspace
 # Copy the Go Modules manifests

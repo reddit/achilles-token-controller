@@ -17,7 +17,7 @@ lint: gosimports
 	go mod tidy
 	go fmt ./...
 	go list ./... | xargs go vet
-	$(GOSIMPORTS) -local github.snooguts.net/reddit/achilles-sudo-controller -l -w .
+	$(GOSIMPORTS) -local github.com/reddit/achilles-sudo-controller -l -w .
 
 # Generate WebhookConfiguration, ClusterRole and CustomResourceDefinition objects.
 .PHONY: generate

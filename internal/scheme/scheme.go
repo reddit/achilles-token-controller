@@ -4,7 +4,7 @@ package scheme
 import (
 	"fmt"
 
-	"github.snooguts.net/reddit/achilles-token-controller/api/group.example.com/v1alpha1"
+	"github.com/reddit/achilles-token-controller/api/group.example.com/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime"
 	kscheme "k8s.io/client-go/kubernetes/scheme"
 )
