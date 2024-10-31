@@ -1,7 +1,7 @@
 // Package controlplane contains state shared across all reconcilers.
 package controlplane
 
-import "github.snooguts.net/reddit/achilles-sdk/pkg/fsm/metrics"
+import "github.com/reddit/achilles-sdk/pkg/fsm/metrics"
 
 // Context holds information on how the controller should run. These values may
 // be referenced during the execution of transition functions.

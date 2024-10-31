@@ -9,10 +9,10 @@ require (
 	github.com/onsi/ginkgo/v2 v2.17.1
 	github.com/onsi/gomega v1.32.0
 	github.com/prometheus/client_golang v1.19.0
+	github.com/reddit/achilles-sdk v0.0.0-20241031141516-cde734cebdf2
+	github.com/reddit/achilles-sdk-api v1.1.0
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.6-0.20210604193023-d5e0c0615ace
-	github.snooguts.net/reddit/achilles-sdk v0.10.0
-	github.snooguts.net/reddit/achilles-sdk-api v1.1.0
 	go.uber.org/zap v1.27.0
 	k8s.io/api v0.29.3
 	k8s.io/apimachinery v0.30.0

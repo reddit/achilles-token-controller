@@ -9,7 +9,7 @@ specified permissions.
 1. Clone the `achilles-token-controller`.
 
     ```
-    git clone git@github.snooguts.net:reddit/achilles-token-controller.git
+    git clone git@github.com:reddit/achilles-token-controller.git
     ```
 
 1. Ensure you have [k3d](https://k3d.io/v5.7.4/#installation) installed.

@@ -1,8 +1,8 @@
 package accesstoken
 
 import (
-	"github.snooguts.net/reddit/achilles-sdk-api/api"
-	"github.snooguts.net/reddit/achilles-token-controller/api/group.example.com/v1alpha1"
+	"github.com/reddit/achilles-sdk-api/api"
+	"github.com/reddit/achilles-token-controller/api/group.example.com/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 )
 
