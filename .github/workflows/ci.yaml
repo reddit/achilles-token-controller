@@ -45,12 +45,9 @@ jobs:
           apt-get install xz-utils
           
           make generate
-          git status
-          git diff
-          test -z "$(git status --porcelain)"
 
-          # lint code
           make lint
+          
           git status
           git diff
           test -z "$(git status --porcelain)"
