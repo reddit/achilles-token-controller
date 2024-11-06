@@ -101,8 +101,8 @@ github.com/prometheus/common v0.49.0 h1:ToNTdK4zSnPVJmh698mGFkDor9wBI/iGaJy5dbH1
 github.com/prometheus/common v0.49.0/go.mod h1:Kxm+EULxRbUkjGU6WFsQqo3ORzB4tyKvlWFOE9mB2sE=
 github.com/prometheus/procfs v0.12.0 h1:jluTpSng7V9hY0O2R9DzzJHYb2xULk9VTR1V1R/k6Bo=
 github.com/prometheus/procfs v0.12.0/go.mod h1:pcuDEFsWDnvcgNzo4EEweacyhjeA9Zk3cnaOZAZEfOo=
-github.com/reddit/achilles-sdk v0.0.0-20241031141516-cde734cebdf2 h1:O4Kov0WnNbLhPvCeZcgCtXsUfzPxnhVE2fdLqOiWYQM=
-github.com/reddit/achilles-sdk v0.0.0-20241031141516-cde734cebdf2/go.mod h1:O460xUhvhMBPCTOleF/bpivDRwgBAqFvnBIIrMskny4=
+github.com/reddit/achilles-sdk v0.12.0 h1:NCExIfqLVL4820Eamv8w0ey/e8YEvyehLmixhQf2H4g=
+github.com/reddit/achilles-sdk v0.12.0/go.mod h1:O460xUhvhMBPCTOleF/bpivDRwgBAqFvnBIIrMskny4=
 github.com/reddit/achilles-sdk-api v1.1.0 h1:sbQv/qH/kaJU4UoAK7trZo76iA5zlgRpcbqGLcSCaNM=
 github.com/reddit/achilles-sdk-api v1.1.0/go.mod h1:tKV9nH5k3TM5MGomS28JRzVyZ+yeJgdS2c5qMZe7fuI=
 github.com/rogpeppe/go-internal v1.11.0 h1:cWPaGQEPrBb5/AsnsZesgZZ9yb1OQ+GOISoDNXVBh4M=
