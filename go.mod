@@ -9,7 +9,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.17.1
 	github.com/onsi/gomega v1.32.0
 	github.com/prometheus/client_golang v1.19.0
-	github.com/reddit/achilles-sdk v0.0.0-20241031141516-cde734cebdf2
+	github.com/reddit/achilles-sdk v0.12.0
 	github.com/reddit/achilles-sdk-api v1.1.0
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.6-0.20210604193023-d5e0c0615ace
