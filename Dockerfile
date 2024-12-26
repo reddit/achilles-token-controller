@@ -4,10 +4,6 @@ FROM golang:$GO_BASE_VERSION as builder
 ARG TARGETOS
 ARG TARGETARCH
 
-ENV GOPRIVATE ""
-ENV GONOSUMDB "github.com/*"
-RUN git config --global url.git@github.com:.insteadof https://github.com/
-
 WORKDIR /workspace
 # Copy the Go Modules manifests
 COPY go.mod go.mod
