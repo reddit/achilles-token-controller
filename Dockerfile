@@ -1,5 +1,5 @@
 # syntax = docker/dockerfile:1
-ARG GO_BASE_VERSION=1.22
+ARG GO_BASE_VERSION=1.24
 FROM golang:$GO_BASE_VERSION as builder
 ARG TARGETOS
 ARG TARGETARCH

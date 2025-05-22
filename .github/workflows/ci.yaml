@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         go-version:
-          - "1.22"
+          - "1.24"
     env:
       GOPRIVATE: github.com/reddit/achilles-sdk-api
 

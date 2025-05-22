@@ -8,11 +8,6 @@ rules:
   - ""
   resources:
   - secrets
-  verbs:
-  - '*'
-- apiGroups:
-  - ""
-  resources:
   - serviceaccounts
   verbs:
   - '*'
@@ -28,11 +23,6 @@ rules:
   resources:
   - clusterrolebindings
   - clusterroles
-  verbs:
-  - '*'
-- apiGroups:
-  - rbac.authorization.k8s.io
-  resources:
   - rolebindings
   - roles
   verbs:
