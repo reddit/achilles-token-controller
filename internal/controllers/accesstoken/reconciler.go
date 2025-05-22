@@ -20,6 +20,7 @@ import (
 	"k8s.io/utils/ptr"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
+	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 )
 
 // These kubebuilder markers[0] define the access (RBAC) requirements for the
@@ -134,7 +135,7 @@ func SetupController(
 	ctx context.Context,
 	cpCtx controlplane.Context,
 	mgr ctrl.Manager,
-	rl workqueue.RateLimiter,
+	rl workqueue.TypedRateLimiter[reconcile.Request],
 	c *io.ClientApplicator,
 ) error {
 	_, log, err := logging.ControllerCtx(ctx, controllerName)
