@@ -4,12 +4,6 @@ FROM golang:$GO_BASE_VERSION as builder
 ARG TARGETOS
 ARG TARGETARCH
 
-# TODO remove this line once the repo is public
-ENV GOPROXY "https://goproxy.build.ue1.snooguts.net"
-ENV GOPRIVATE ""
-ENV GONOSUMDB "github.com/*"
-RUN git config --global url.git@github.com:.insteadof https://github.com/
-
 WORKDIR /workspace
 # Copy the Go Modules manifests
 COPY go.mod go.mod
